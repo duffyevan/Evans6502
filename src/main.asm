@@ -1,5 +1,5 @@
 .segment "CODE"
-.include "../kernelsrc/helpful_functions.asm"
+.include "../kernelsrc/helpful_macros.mp"
 .macro SEND address
 	.local SEND_loop
 	.local done

@@ -57,19 +57,3 @@
 	SEI ;disable interrupts (set interrupt disable flag)
 	CLD ;turn decimal mode off
 .endmacro
-
-_push_registers:
-	PHA ; push A
-	TXA
-	PHA ; push X
-	TYA
-	PHA ; push Y
-	RTS
-
-_pop_registers:
-	PLA ; POP Y
-	TAY
-	PLA ; POP X
-	TAX
-	PLA ; POP A
-	RTS
